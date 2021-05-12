@@ -24,6 +24,7 @@ namespace szczepienia
                     applyButtons.First().Click();
                     driver.FindElementByXPath(@"//button[contains(., 'Tak')]").Click();
                     Console.WriteLine("ZNALEZIONO TERMIN SPRAWDŹ CZY SIĘ UDAŁO");
+                    return;
                 }
                 Thread.Sleep(10000);
             }
